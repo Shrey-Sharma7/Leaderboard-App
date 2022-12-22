@@ -5,6 +5,7 @@ const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const helmet = require('helmet');
 const morgan = require('morgan');
+const cors = require('cors');
 const cache = require('./redis_db');
 const { authCheck } = require('./middlewares/auth');
 const authRoute = require('./routes/auth');
@@ -31,6 +32,8 @@ db.once('open', function () {
 });
 
 app.use(express.json());
+
+app.use(cors());
 app.use(helmet());
 app.use(morgan("common"));
 
