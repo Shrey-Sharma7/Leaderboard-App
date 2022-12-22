@@ -8,6 +8,8 @@ const morgan = require('morgan');
 const cache = require('./redis_db');
 const { authCheck } = require('./middlewares/auth');
 const authRoute = require('./routes/auth');
+const scoresRoute = require('./routes/scores');
+const leaderboardRoute = require('./routes/leaderboard');
 
 // Connect to redis
 
@@ -34,6 +36,7 @@ app.use(morgan("common"));
 
 // Routes
 app.use(`/api/auth`, authRoute);
-app.use('/api/scores', authCheck, require('./routes/scores'));
+app.use('/api/scores', authCheck, scoresRoute);
+app.use('/api/leaderboard', leaderboardRoute);
 
 module.exports = app;
