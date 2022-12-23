@@ -6,5 +6,5 @@ const server = app.listen(port, () => {
     console.log(`server started on port ${port}`);
 })
 
-const io = require('socket.io')(server);
+// const io = require('socket.io')(server);
 

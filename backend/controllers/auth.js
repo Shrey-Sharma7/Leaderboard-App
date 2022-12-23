@@ -19,7 +19,7 @@ exports.signup = async (req, res) => {
         // add user to redis
         await cache.zadd('leaderboard', user.score, user.username);
 
-        io.emit('update', {username: user.username, score: user.score});
+        // io.emit('update', {username: user.username, score: user.score});
 
         // Generate a JWT and return it to the client
         // const token = jwt.sign(user, 'test', { expiresIn: "1h" });
@@ -33,7 +33,7 @@ exports.signup = async (req, res) => {
         });
 
     } catch (error) {
-        res.status(500).json({ error: "internal server error" });
+        res.status(500).json({ error: error.message });
     }
 }
 

@@ -19,7 +19,7 @@ exports.updateScore = async (req, res) => {
         await user.save();
         await cache.zadd("leaderboard", user.score, user.username);
 
-        io.emit('update', {username: user.username, score: user.score});
+        // io.emit('update', {username: user.username, score: user.score});
         
         res.status(200).json({
             username: user.username,
