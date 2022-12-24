@@ -3,7 +3,7 @@
 This is a Leaderboard webapp where you can signup/login and can add/withdraw your balance and the score will be reflected in the app.
 The tech-stack used in building the app is:
 
-```React.js, Node.js, Express, Socket.io, MongoDB, Redis```
+```React.js, Node.js, Express, Socket.io, MongoDB, Redis & TailwindCSS```
 
 Website Link: [Leaderboard App](https://fabulous-banoffee-68f1ea.netlify.app/)
                 
