@@ -22,7 +22,7 @@ node app.js
 For the frontend you can do:
 
 ```bash
-npm build
+npm install
 npm run dev
 ```
 
