@@ -35,14 +35,14 @@ export default function Leaderboard({socket}) {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/api/leaderboard")
+    fetch("https://leaderboard-api-i94y.onrender.com/api/leaderboard")
       .then((res) => res.json())
       .then((data) => setData(data));
   }, []);
 
   useEffect(() => {
     socket.on('updateScore', (res) => {
-      fetch("http://localhost:3000/api/leaderboard")
+      fetch("https://leaderboard-api-i94y.onrender.com/api/leaderboard")
       .then((res) => res.json())
       .then((data) => setData(data));
     })

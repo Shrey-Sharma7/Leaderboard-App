@@ -28,7 +28,7 @@ const Login = (props) => {
   const handleSubmit = (event) => {
     event.preventDefault();
     // Send form data to server or perform other tasks
-    fetch("http://localhost:3000/api/auth/login", {
+    fetch("https://leaderboard-api-i94y.onrender.com/api/auth/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

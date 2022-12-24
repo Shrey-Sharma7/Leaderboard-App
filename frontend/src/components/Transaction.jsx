@@ -10,7 +10,7 @@ const Transaction = (props) => {
 
   const handleAdd = (event) => {
     event.preventDefault();
-    fetch("http://localhost:3000/api/scores", {
+    fetch("https://leaderboard-api-i94y.onrender.com/api/scores", {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
@@ -28,9 +28,6 @@ const Transaction = (props) => {
           throw new Error("Error");
         }
       })
-      .then((data) => {
-        console.log(data, 'api');
-      })
       .catch((error) => {
         console.log(error.message);
       });
@@ -38,7 +35,7 @@ const Transaction = (props) => {
 
   const handleRemove = (event) => {
     event.preventDefault();
-    fetch("http://localhost:3000/api/scores", {
+    fetch("https://leaderboard-api-i94y.onrender.com/api/scores", {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
@@ -55,9 +52,6 @@ const Transaction = (props) => {
         } else {
           throw new Error("Error");
         }
-      })
-      .then((data) => {
-        console.log(data,'api');
       })
       .catch((error) => {
         console.log(error.message);
