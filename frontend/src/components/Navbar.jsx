@@ -17,6 +17,7 @@ export default function ButtonAppBar(props) {
 
   const handleModalChange = () => {
     setOpen(!open);
+    // setLoginMode(true);
   };
 
   const changeLoginVar = () => {

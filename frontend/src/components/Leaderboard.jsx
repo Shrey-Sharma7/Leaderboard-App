@@ -34,11 +34,11 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
 export default function Leaderboard({socket}) {
   const [data, setData] = useState([]);
 
-  useEffect(() => {
-    fetch("https://leaderboard-api-i94y.onrender.com/api/leaderboard")
-      .then((res) => res.json())
-      .then((data) => setData(data));
-  }, []);
+  // useEffect(() => {
+  //   fetch("https://leaderboard-api-i94y.onrender.com/api/leaderboard")
+  //     .then((res) => res.json())
+  //     .then((data) => setData(data));
+  // }, []);
 
   useEffect(() => {
     socket.on('updateScore', (res) => {
