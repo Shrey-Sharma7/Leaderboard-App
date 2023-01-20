@@ -29,7 +29,7 @@ const SignUp = (props) => {
   const handleSubmit = (event) => {
     event.preventDefault();
     // Send form data to server or perform other tasks
-    fetch("https://leaderboard-api-i94y.onrender.com/api/auth/signup", {
+    fetch("http://localhost:3000/api/auth/signup", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

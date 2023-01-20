@@ -10,7 +10,7 @@ const Transaction = (props) => {
 
   const handleAdd = (event) => {
     event.preventDefault();
-    fetch("https://leaderboard-api-i94y.onrender.com/api/scores", {
+    fetch("http://localhost:3000/api/scores", {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
@@ -35,7 +35,7 @@ const Transaction = (props) => {
 
   const handleRemove = (event) => {
     event.preventDefault();
-    fetch("https://leaderboard-api-i94y.onrender.com/api/scores", {
+    fetch("http://localhost:3000/api/scores", {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",

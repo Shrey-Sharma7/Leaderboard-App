@@ -6,7 +6,7 @@ import Leaderboard from "./components/Leaderboard";
 import Transaction from "./components/Transaction";
 import { useState } from "react";
 
-const socket = io.connect("https://leaderboard-api-i94y.onrender.com");
+const socket = io.connect("http://localhost:3000");
 
 socket.on("connect", () => {
 	console.log("Connected to server");
