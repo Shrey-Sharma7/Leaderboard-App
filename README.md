@@ -5,7 +5,7 @@ The tech-stack used in building the app is:
 
 ```React.js, Node.js, Express, Socket.io, MongoDB, Redis & TailwindCSS```
 
-Website Link: [Leaderboard App](https://fabulous-banoffee-68f1ea.netlify.app/)
+Website Link: [Leaderboard App](https://fabulous-banoffee-68f1ea.netlify.app/)    [Currently under construction....]
                 
 API Link: [Leaderboard API](https://leaderboard-api-i94y.onrender.com)
 
